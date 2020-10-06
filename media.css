@@ -1,0 +1,21 @@
+@media only screen and (max-device-width: 480px) {
+    .content {
+        max-width: 200x;
+        margin: auto;
+        background: green;
+        padding: 10px;
+        text-decoration: honeydew;
+      }
+
+    
+    .data {
+            max-width: 200x;
+            margin: auto;
+            background: green;
+            padding: 10px;
+            text-decoration: honeydew;
+          }
+    
+
+   
+}
