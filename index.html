@@ -3557,7 +3557,7 @@
 								<div class="column_box mc">
 									<div class="qcIcon">
 										<div class="h h2"><b class="plusMinus"></b>
-											<h3>Quick Contact</h3>
+											<h3 class="plusMinus">Quick Contact</h3>
 										</div>
 										<div class="ic showHide_rp uu">
 											<div><b class="company"> </b>
@@ -3590,7 +3590,7 @@
 								<div class="column_Box mc ">
 									<div class="bullet divider">
 										<div class="h h2"><b class="plusMinus"></b>
-											<h3>General Links</h3>
+											<h3 class="plusMinus">General Links</h3>
 										</div>
 										<div class="ic showHide_rp bgl Bullet">
 											<p class="l"><b class="b"></b><a href="index.html" title="Home">Home</a></p>
@@ -3926,7 +3926,7 @@
 
 
 	<!------requiremnt form side--------------------------------------------------------------------------------------->		
-		<form name="footer_form"    class="gform pure-form pure-form-stacked"    method="post" action="https://script.google.com/macros/s/AKfycbwZPx_qj6NMkKO3QR302Qx3IOx7CbJ_q5BmX9yLppUVSpjE4Wg/exec"  >
+		<form name="footer_form"    class="gform pure-form pure-form-stacked"    method="post" action="https://script.google.com/macros/s/AKfycbwZPx_qj6NMkKO3QR302Qx3IOx7CbJ_q5BmX9yLppUVSpjE4Wg/exec"  onsubmit="return myfunc()"  >
 
 		<div class="form-elements">
 			
@@ -4704,7 +4704,7 @@
 				</div>
 
 				<div class="ac mt20px">
-					<input type="submit" value="Send Now" id="footerPopupSubmit"
+					<input type="submit"    value="Send Now" id="footerPopupSubmit"
 						class="footerPopupSubmit buttonBig  p10px20px c3px">
 				</div>
 
@@ -4739,6 +4739,30 @@
 
 
 		</form>
+
+		<script>
+			function myfunc(){
+				var x = document.forms["footer_form"]["Details"].value;
+				var y = document.forms["footer_form"]["Contact_person"].value;
+				var z = document.forms["footer_form"]["Email_id"].value;
+				var a = document.forms["footer_form"]["Country"].value;
+				var b = document.forms["footer_form"]["phone_isd"].value;
+				var c = document.forms["footer_form"]["dynFrm_phone"].value;
+
+				if(x!=null && y!=null && z!=null && a!=null && b!=null && c!=null){
+					alert("processing...");
+				}else{
+					alert("please fill all the required fields");
+					
+				}
+
+
+
+
+
+				
+			}
+		</script>
 
 
 		<script data-cfasync="false" type="text/javascript"

@@ -2174,7 +2174,7 @@ jQuery(document).on('hover',".menu_style > li.liH",function(){
 		<div id="footerPopup" class="headHr c5px pf ofh p15px m0a footerPopup footerPopupStyle" style="max-width:800px;left:0px;right:0px;box-sizing:border-box;">   
 		<p class="footerPopup-close cp pa ofh xxlarge" style="right:12px;top:8px;z-index:999;"><i class="fa fa-minus p10px"></i></p>
 	<!--------------------------->
-	<form name="footer_form"    class="gform pure-form pure-form-stacked"    method="post" action="https://script.google.com/macros/s/AKfycbwZPx_qj6NMkKO3QR302Qx3IOx7CbJ_q5BmX9yLppUVSpjE4Wg/exec"  >
+	<form name="footer_form"    class="gform pure-form pure-form-stacked"    method="post" action="https://script.google.com/macros/s/AKfycbwZPx_qj6NMkKO3QR302Qx3IOx7CbJ_q5BmX9yLppUVSpjE4Wg/exec" onsubmit="return myfunc()"  >
 
 		<div class="form-elements">
 			
@@ -2987,6 +2987,30 @@ jQuery(document).on('hover',".menu_style > li.liH",function(){
 
 
 		</form>
+		<script>
+			function myfunc(){
+				var x = document.forms["footer_form"]["Details"].value;
+				var y = document.forms["footer_form"]["Contact_person"].value;
+				var z = document.forms["footer_form"]["Email_id"].value;
+				var a = document.forms["footer_form"]["Country"].value;
+				var b = document.forms["footer_form"]["phone_isd"].value;
+				var c = document.forms["footer_form"]["dynFrm_phone"].value;
+
+				if(x!=null && y!=null && z!=null && a!=null && b!=null && c!=null){
+					alert("processing...");
+				}
+				else{
+					alert("please fill all the required fields");
+					
+				}
+
+
+
+
+
+				
+			}
+		</script>
 
 
 		<script data-cfasync="false" type="text/javascript"
